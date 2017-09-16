@@ -4,6 +4,10 @@
 
 /* @font-face {font-family: 'sacker-gothic';src :'font/SackersGothicStd-Heavy.otf';}*/
 
+/* bleu clair : #3498DB */
+
+/* bleu foncé : #2C3E50 */
+
 body, html {
   padding: 0;
   margin: 0;
@@ -16,6 +20,9 @@ body {
 a, a:hover {
   text-decoration: none;
 }
+
+
+
 
 /* header */
 .header {
@@ -33,7 +40,8 @@ a, a:hover {
   }
 
 .menu {
-  float: right;
+    float: right;
+    margin-top: auto;
 }
 
 .menu a {
@@ -45,7 +53,37 @@ a, a:hover {
   color: #2C3E50;
 }
 /* bannière */
+.banner {
+    width: 100%;
+    max-width: 100%;
+}
 
+.ban {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.ban img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.inner-banner {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-banner h1 {
+    text-shadow: 1px 1px 20px #ffffff;
+}
+
+.inner-banner .btn-custom {
+    
+}
 /* about */
 
 /* protfolio */
