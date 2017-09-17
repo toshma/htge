@@ -8,27 +8,51 @@
 
 /* bleu foncé : #2C3E50 */
 
+@font-face {
+    font-family: 'sacker-gothic';
+    src :'font/SackersGothicStd-Heavy.otf';
+}
+
 body, html {
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+    font-family: 'sacker-gothic', 'Raleway', sans-serif;   
 }
 
 a, a:hover {
   text-decoration: none;
 }
 
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
 
+.separator{
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: #3498DB;
+}
 
+.btn-custom {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+
+.btn-custom:hover {
+    color: #2C3E50;
+}
 
 /* header */
 .header {
   background-color: #3498DB;
   height: 70px;
-  line-height: 70 px;
+  line-height: 70px;
 }
 
 .logo {
@@ -41,7 +65,6 @@ a, a:hover {
 
 .menu {
     float: right;
-    margin-top: auto;
 }
 
 .menu a {
@@ -73,19 +96,104 @@ a, a:hover {
     position: absolute;
     top: 40%;
     left: 0;
+    right: 0;
     width: 100%;
     text-align: center;
 }
 
-.inner-banner h1 {
-    text-shadow: 1px 1px 20px #ffffff;
+.inner-banner btn-custom {
+    background-color: #3498DB;
+    color: #ffffff;
 }
 
-.inner-banner .btn-custom {
-    
+.inner-banner btn-custom:hover {
+    background-color: #2C3E50;
 }
+
+.inner-banner h1 {
+    text-shadow: 1px 1px 20px #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
 /* about */
+#about {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.about article {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.about article h2 {
+    text-align: center;
+}
+
 
 /* protfolio */
+.portfolio {
+    background-color: #eeeeee;
+}
+
+#portfolio {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%:
+}
+
+.portfolio .item-folio {
+    height: 280px;
+    background-color: #3498DB;
+}
 
 /* contact */
+
+.footer {
+    background-color: #2C3E50;
+    color: #ffffff;
+    height: 700px;
+}
+
+.footer p {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#contact {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.formulairecontact {
+    width: 500px;
+    display: block;
+    margin: 0 auto;    
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#name {
+    height: 50px;
+    width: 500px;
+    border: none;
+}
+
+#message {
+    height: 200px;
+    width: 500px;
+    border: none;
+    resize: vertical;
+}
+
+#email {
+    height: 50px;
+    width: 500px;
+    border: none;
+}
+
